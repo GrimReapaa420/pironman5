@@ -20,11 +20,13 @@ __package_name__ = __name__.split('.')[0]
 CONFIG_PATH = str(resource_files(__package_name__).joinpath('config.json'))
 
 PMDashboard = None
+"""
 try:
     from pm_dashboard.pm_dashboard import PMDashboard
     from pm_dashboard import __version__ as pm_dashboard_version
 except ImportError:
     pass
+"""
 
 class Pironman5:
   
