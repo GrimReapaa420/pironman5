@@ -161,8 +161,10 @@ if os.path.exists('/umbrelOS'):
     settings['dtoverlays'] = []
 
 installer.update_settings(settings)
+"""
 if not args.disable_dashboard:
     installer.update_settings(dashboard_settings)
+    """
 if 'oled' in PERIPHERALS:
     installer.update_settings(oled_settings)
 if 'gpio_fan_state' in PERIPHERALS or \
